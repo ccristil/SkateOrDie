@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "SkateOrDie | Tutoring Rates";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+<p>Please fill out the form below for skating lessons!!!</p>
+<form action="">
+    <legend>
+        <h3>Calculate what you'll pay:</h3>
+    </legend>
+    <fieldset>
+        <label for="hours">Hours:</label>
+        <input id="hours" min="1" type="number">
+        <br>
+        <label for="myRate">Rate:</label>
+        <input value="15" type="text" id="myRate" disabled>
+        <br>
+    </fieldset>
+    <button class="btn btn-primary" id="calculateButton">Do Math</button>
+
+</form>
+<br>
+<label for="output">Your Quote:</label>
+<input id="output" value="" disabled></input>
